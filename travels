@@ -1,0 +1,13 @@
+create table member(
+id varchar2(12) primary key,
+password varchar2(12) not null,
+firstname varchar2(20) not null,
+lastname varchar2(20) not null,
+birth date not null,
+gender varchar2(10) not null,
+tel varchar2(20),
+address varchar2(50),
+reg_time date
+);
+
+select * from member;

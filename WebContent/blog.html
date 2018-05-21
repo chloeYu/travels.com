@@ -1,0 +1,296 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Travels a Travel Guide category Flat bootstrap Responsive
+	Website Template | Blog :: w3layouts</title>
+<!--css-->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!--/css-->
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords"
+	content="Travels Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<!-- bxSlider 관련 자바스크립트 -->
+<script type="text/javascript">
+	//<![CDATA[
+	$(function() {
+		var mySlider = $("#sm_photo_wrap").bxSlider({
+			mode : "horizontal", // 가로 수평으로 슬라이드 됩니다.
+			speed : 500, // 이동 속도를 설정합니다.
+			pager : false, // 현재 위치 페이징 표시 여부 설정.
+			moveSlides : 1, // 슬라이드 이동시 갯수 설정.
+			slideWidth : 72, // 슬라이드 마다 너비 설정.
+			minSlides : 3, // 최소 노출 개수를 설정합니다.
+			maxSlides : 3, // 최대 노출 개수를 설정합니다.
+			slideMargin : 0, // 슬라이드간의 간격을 설정합니다.
+			auto : false, // 자동으로 흐를지 설정합니다.
+			autoHover : true, // 마우스 오버시 정시킬지 설정합니다.
+			controls : false
+		// 이전 다음 버튼 노출 여부 설정합니다.
+		});
+
+		//이전 버튼을 클릭하면 이전 슬라이드로 전환됩니다.
+		$(".prevBtn").on("click", function() {
+			mySlider.goToPrevSlide(); //이전 슬라이드 배너로 이동됩니다.
+			return false; //<a>에 링크를 차단합니다.
+		});
+
+		//다음 버튼을 클릭하면 다음 슬라이드로 전환됩니다.
+		$(".nextBtn").on("click", function() {
+			mySlider.goToNextSlide(); //다음 슬라이드 배너로 이동됩니다.
+			return false;
+		});
+
+		// id="photo_wrap"인 요소에 하위 <li> 태그만 모두 선택
+		var pw_li = $("#photo_wrap li");
+		//위에서 선택한 <li> 태그중 첫 번째 요소에만 class="on"을 생성합니다.
+		$(pw_li).filter(":first").addClass("on");
+
+		//id="sm_photo_wrap"에 하위 <a> 태그를 클릭했을 때 이벤트 핸들러가 실행됨.
+		$("#sm_photo_wrap a").on(
+				"click",
+				function() {
+					//클릭한 <a>에 하위 <img> 태그에 alt 속성 값을 가져옵니다.
+					var alt = $("img", this).attr("alt");
+
+					$(pw_li).has($("img[alt=" + alt + "]")).not(".on").css({
+						opacity : 0, //투명도를 0이므로 완전히 투명하게 됩니다.
+						"z-index" : 2
+					//z-index의 값을 2로 주었기에 가장 위로 떠 있겠네요.
+					}).stop().animate(
+							{
+								opacity : 1
+							},
+							400,
+							function() {
+
+								/*애니메이션이 모두 완료되었을 경우 class="on"이 포함된 <li> 태그에
+								class="on"을 제거하고, z-index에 속성을 기본 "auto"로 설정하였습니다.*/
+								$(pw_li).filter(".on").removeClass("on").css(
+										"z-index", "auto");
+
+								//animate()가 적용된 요소에 스타일(CSS) z-index 값을 1로 지정하였습니다. 
+								$(this).addClass("on").css("z-index", 1);
+							});
+					return false;
+				}); //on() 메서드 종료 
+	});
+	//]]>
+</script>
+<style type="text/css">
+	/*기본 세팅*/
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	
+	img {
+		border: none;
+	}
+	
+	li {
+		list-style: none;
+	}
+	
+	/*갤러리 디자인*/
+	h1 {
+		text-align: center;
+	}
+	
+	#gallery {
+		width: 260px;
+		position: relative;
+		margin: 0 auto;
+	}
+	
+	#photo_wrap {
+		position: relative;
+		height: 195px;
+	}
+	
+	#photo_wrap li {
+		position: absolute;
+	}
+	
+	/*버튼 디자인*/
+	.prevBtn, .nextBtn {
+		display: block;
+		text-indent: -9999px;
+		font-size: 0;
+		width: 22px;
+		height: 54px;
+		position: absolute;
+		left: 0;
+		top: 195px;
+		background: url("images/plugin_prev_btn.jpg") left top no-repeat;
+	}
+	
+	.nextBtn {
+		background-image: url("images/plugin_next_btn.jpg");
+		left: 238px;
+	}
+	
+	.prevBtn:hover, .nextBtn:hover {
+		background-position: left bottom;
+	}
+	
+	/*<li> 태그중 class="on"포함되어 있으면 가장 위로 뜨게 됩니다.*/
+	#photo_wrap li.on {
+		z-index: 1;
+	}
+</style>
+
+<script type="application/x-javascript">
+	 addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
+</script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+
+<!-- font -->
+<link
+	href='//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic'
+	rel='stylesheet' type='text/css'>
+<link
+	href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400'
+	rel='stylesheet' type='text/css'>
+<!--/fonts-->
+<!--script-->
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event) {
+			event.preventDefault();
+			$('html,body').animate({
+				scrollTop : $(this.hash).offset().top
+			}, 900);
+		});
+	});
+</script>
+<!-- script-for-menu -->
+<script>
+	$("span.menu").click(function() {
+		$(".top-nav ul").slideToggle("slow", function() {
+		});
+	});
+</script>
+
+	<!--header-->
+	<div id="header"></div>
+	<!-- <div class="banner banner5"></div> -->
+	<!--inner-page-about-->
+	<div class="image">
+		<img src="images/blog.jpg" width="100%" />
+		<div class="text">
+			<h3>Travel_Info</h3>
+		</div>
+	</div>
+
+	<!--inner-page-blog-->
+
+	<!-- blog -->
+	<div class="blog">
+		<div class="container">
+			<h3>싱가포르 여행정보</h3>
+			<div class="single-inline">
+				<div class="blog-to">
+					<div id=gallery>
+						<!-- 포토 슬라이드 -->
+						<ul id="photo_wrap">
+							<li><a href="single.html"> <img
+									class="img-responsive sin-on standard-size"
+									src="images/city/singapore/singapore1.jpg" alt="사진1" />
+							</a></li>
+							<li><a href="single.html"> <img
+									class="img-responsive sin-on standard-size"
+									src="images/city/singapore/singapore2.jpg" alt="사진2" />
+							</a></li>
+							<li><a href="single.html"> <img
+									class="img-responsive sin-on standard-size"
+									src="images/city/singapore/singapore3.jpg" alt="사진3" />
+							</a></li>
+							<li><a href="single.html"> <img
+									class="img-responsive sin-on standard-size"
+									src="images/city/singapore/singapore4.jpg" alt="사진4" />
+							</a></li>
+						</ul>
+
+						<ul id="sm_photo_wrap">
+							<li><a href="single.html"> <img
+									class="img-responsive sin-on standard-size"
+									src="images/city/singapore/singapore1_reduce.jpg" alt="사진1" />
+							</a></li>
+							<li><a href="single.html"> <img
+									class="img-responsive sin-on standard-size"
+									src="images/city/singapore/singapore2_reduce.jpg" alt="사진2" />
+							</a></li>
+							<li><a href="single.html"> <img
+									class="img-responsive sin-on standard-size"
+									src="images/city/singapore/singapore3_reduce.jpg" alt="사진3" />
+							</a></li>
+							<li><a href="single.html"> <img
+									class="img-responsive sin-on standard-size"
+									src="images/city/singapore/singapore4_reduce.jpg" alt="사진4" />
+							</a></li>
+						</ul>
+						<p>
+							<a href="#" class="prevBtn">이전</a> <a href="#" class="nextBtn">다음</a>
+						</p>
+					</div>
+
+					<div class="blog-top">
+						<div class="blog-left">
+							<b>14</b> <span>Feb</span>
+						</div>
+						<div class="top-blog">
+							<a class="fast" href="single.html">Sed ut perspiciatis unde
+								omnis iste natus error sit voluptatem</a>
+							<p>
+								Posted by <a href="single.html">Admin</a> in <a href="#">General</a>
+								| <a href="single.html">10 Comments</a>
+							</p>
+							<p class="sed">Lorem Ipsum is simply dummy text of the
+								printing and typesetting industry. Lorem Ipsum has been the
+								industry's standard dummy text ever since the 1500 when an
+								unknown printer took a galley of type and scrambled it to make a
+								type specimen book. It has survived not only five centuries, but
+								also the leap. Lorem Ipsum is simply dummy text of the printing
+								and typesetting industry.</p>
+							<a href="single.html" class="more">Readmore<span> </span></a>
+
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+
+			</div>
+			<nav>
+				<ul class="pagination">
+					<li class="disabled"><a href="#" aria-label="Previous"><span
+							aria-hidden="true">«</span></a></li>
+					<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+					<li><a href="#">2 <span class="sr-only"></span></a></li>
+					<li><a href="#">3 <span class="sr-only"></span></a></li>
+					<li><a href="#">4 <span class="sr-only"></span></a></li>
+					<li><a href="#">5 <span class="sr-only"></span></a></li>
+					<li><a href="#" aria-label="Next"><span aria-hidden="true">»</span>
+					</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	

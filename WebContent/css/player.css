@@ -1,0 +1,853 @@
+
+h2.title {
+    color: #333;
+    display: block;
+    font: bold 36px/36px "Nanum Gothic";
+    padding: 50px 0 15px;
+}
+.desc {
+    color: #333;
+    display: block;
+    font: 20px/20px "Nanum Gothic";
+    padding: 0 0 40px;
+}
+.visualArea {
+    background: rgba(0, 0, 0, 0) url("/img/main/visual/bg_201610_f.jpg") no-repeat scroll center 0;
+    height: 453px;
+    margin: 0 0 84px;
+    padding-top: 50px;
+    position: relative;
+    width: 100%;
+}
+.visualArea .visualIn {
+    background: rgba(0, 0, 0, 0) url("/img/main/visual/bg_201610.jpg") no-repeat scroll center 0;
+    height: 504px;
+    margin: 0 auto;
+    position: relative;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    width: 1064px;
+}
+.visualArea .mainCopy {
+    color: #fff;
+    font: 24px "Nanum Gothic";
+    left: 50px;
+    letter-spacing: -0.025em;
+    position: absolute;
+    text-align: left;
+    top: 67px;
+    z-index: 3;
+}
+.visualArea .mainCopy strong {
+    display: block;
+    font-size: 50px;
+    font-weight: normal;
+    letter-spacing: -0.01em;
+    margin: 0 0 12px;
+}
+.visualArea .bestCity {
+    bottom: 0;
+    height: 200px;
+    left: 51px;
+    position: absolute;
+    width: 1013px;
+}
+.visualArea .bestCity .new .anythingSlider-default .arrow a {
+    background: rgba(0, 0, 0, 0) url("/img/main/spr_slideBtn_new.png") no-repeat scroll 0 0;
+    height: 51px;
+}
+.visualArea .bestCity .new .anythingSlider-default .arrow a:hover {
+    background-position: -52px 0;
+}
+.visualArea .bestCity .new .anythingSlider-default .back {
+    top: 52px;
+}
+.visualArea .bestCity .new .anythingSlider-default .back a {
+    background-position: 0 -52px;
+}
+.visualArea .bestCity .new .anythingSlider-default .back a:hover {
+    background-position: -52px -52px;
+}
+.visualArea .bestCity .new .anythingSlider-default .forward {
+    top: 0;
+}
+@media �screen {
+.visualArea .bestCity.new .anythingSlider-default .back {
+    top: 53px;
+}
+.visualArea .bestCity.new .anythingSlider-default .forward {
+    top: 5px;
+}
+}
+.visualArea .citySlide {
+    height: 152px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    z-index: 2;
+}
+.visualArea .anythingSlider {
+    float: left;
+    margin: 0;
+}
+.citySlide {
+    margin-top: 25px;
+}
+.citySlide .slideIn {
+    height: 130px;
+    text-align: left;
+}
+.citySlide .slideIn a {
+    float: left;
+    height: 152px;
+    margin-left: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 152px;
+}
+.citySlide .slideIn a:first-child {
+    margin: 0;
+}
+.citySlide .slideIn a .cover {
+    background: rgba(0, 0, 0, 0) url("/img/main/cover_squareThumb.png") repeat-x scroll 0 0;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.citySlide .slideIn a:hover .cover {
+    background: #000 none repeat scroll 0 0;
+    opacity: 0.5;
+}
+.citySlide .slideIn a img {
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+.citySlide .slideIn a .cityName {
+    bottom: 14px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    left: 0;
+    position: absolute;
+    text-indent: 15px;
+    width: 100%;
+    z-index: 3;
+}
+.citySlide .slideIn .recommend {
+    background: rgba(0, 0, 0, 0) url("/img/main/ico_recommend.gif") no-repeat scroll 0 0;
+    display: block;
+    font: 0px/0 arial;
+    height: 24px;
+    letter-spacing: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 46px;
+    z-index: 3;
+}
+#citySlide01, #citySlide02, #citySlide03, #citySlide04, #citySlide05, #citySlide06, #citySlide07, #citySlide08 {
+    height: 152px;
+    width: 962px;
+}
+.slideTab {
+    position: relative;
+    text-align: left;
+    z-index: 3;
+}
+.slideTab li {
+    display: inline;
+    margin-left: 30px;
+}
+.slideTab li:first-child {
+    margin: 0;
+}
+.slideTab a, .slideTab a:link {
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 6px;
+}
+.slideTab a:hover, .slideTab a.on {
+    border-bottom: 3px solid #fff;
+}
+.visualArea .blankBg {
+    background: #000 none repeat scroll 0 0;
+    bottom: 50px;
+    height: 171px;
+    left: 0;
+    opacity: 0.25;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+.mainBanner {
+    margin: 0 0 50px;
+}
+.mainBanner a {
+    font: 0px/0 arial;
+}
+.newTit {
+    clear: both;
+    color: #444;
+    display: block;
+    font: 600 30px/30px "Nanum Gothic";
+    letter-spacing: -0.017em;
+    margin: 0 0 20px;
+    text-align: left;
+}
+.cityMonth {
+    margin: 0 auto 50px;
+    width: 1064px;
+}
+.cityMonth .tabBox.typeA {
+    height: 320px;
+    padding: 0;
+    width: auto;
+}
+.cityMonth .tabBox.typeA .tab {
+    background: #f8f8f8 none repeat scroll 0 0;
+    height: 320px;
+    left: 0;
+    right: inherit;
+    top: 0;
+    width: 364px;
+}
+.cityMonth .tabBox.typeA .tab ul {
+    margin: 30px 0 0 30px;
+}
+.cityMonth .tabBox.typeA .tab li {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-bottom: 1px solid #eee;
+    color: #444;
+    font-size: 20px;
+    height: 59px;
+    letter-spacing: -0.025em;
+    line-height: 59px;
+    margin: 0;
+    text-align: left;
+    text-indent: 20px;
+}
+.cityMonth .tabBox.typeA .tab li::before {
+    display: none;
+}
+.cityMonth .tabBox.typeA .tab li:hover, .cityMonth .tabBox.typeA .tab li.on {
+    background: #fff none repeat scroll 0 0;
+}
+.cityMonth .tabBox.typeA .tabConts {
+    background: #f7f7f9 none repeat scroll 0 0;
+    height: 320px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 701px;
+}
+.cityMonth .tabBox.typeA .tabConts .tabCont {
+    height: 320px;
+}
+.cityMonth .tabBox.typeA .tabConts img {
+    height: auto;
+    min-height: 100%;
+    position: relative;
+    width: auto;
+    z-index: 1;
+}
+.cityMonth .tabBox.typeA .tabConts a.info {
+    display: block;
+    height: 234px;
+    left: 0;
+    margin: 0;
+    padding: 43px 30px;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    width: 278px;
+}
+.cityMonth .tabBox.typeA .tabConts a.info::after {
+    background: rgba(0, 0, 0, 0) url("/img/main/ico_cityMonth.png") no-repeat scroll 0 0;
+    bottom: 30px;
+    content: "";
+    display: block;
+    height: 34px;
+    position: absolute;
+    right: 30px;
+    width: 18px;
+    z-index: 3;
+}
+.cityMonth .tabBox.typeA .tabConts a.info p, .cityMonth .tabBox.typeA .tabConts a.info strong {
+    display: block;
+    margin: 0 0 9px;
+    position: relative;
+    z-index: 2;
+}
+.cityMonth .tabBox.typeA .tabConts a.info p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+}
+.cityMonth .tabBox.typeA .tabConts a.info strong {
+    color: #fff;
+    font-size: 26px;
+    line-height: 36px;
+}
+.cityMonth .tabBox.typeA .tabConts a.info .cover {
+    background: #e85581 none repeat scroll 0 0;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.airHotel {
+    margin: 0 auto 50px;
+    text-align: left;
+    width: 1064px;
+}
+.airHotel::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.airHotel .desc {
+    color: #666;
+    font-size: 18px;
+    letter-spacing: -0.025em;
+    margin: 0 0 20px;
+    padding: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+.airHotel .desc a {
+    background: rgba(0, 0, 0, 0) url("/img/main/ico_desc.png") no-repeat scroll right center;
+    display: inline-block;
+    float: right;
+    font-size: 16px;
+    padding-right: 20px;
+    vertical-align: baseline;
+}
+.airHotel .airWrap, .airHotel .hotelWrap {
+    display: inline-block;
+    padding: 20px 0 0 20px;
+    width: 478px;
+}
+.airHotel .airWrap {
+    background: rgba(0, 0, 0, 0) url("/img/main/bg_airWrap.gif") no-repeat scroll 0 0;
+    float: left;
+}
+.airHotel .hotelWrap {
+    background: rgba(0, 0, 0, 0) url("/img/main/bg_hotelWrap.jpg") no-repeat scroll 0 0;
+    float: right;
+}
+.middleArea {
+    margin: 100px auto 50px;
+    width: 1064px;
+}
+.middleArea::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.middleArea .newTit {
+    margin-top: -50px;
+}
+.middleArea .map {
+    border: 1px solid #e4e4e4;
+    display: inline-block;
+    float: left;
+    height: 368px;
+    width: 789px;
+}
+.middleArea .map .mapBookArea #mapBookArea01, .middleArea .map .mapBookArea #mapBookArea02, .middleArea .map .mapBookArea #mapBookArea03, .middleArea .map .mapBookArea #mapBookArea04, .middleArea .map .mapBookArea #mapBookArea05, .middleArea .map .mapBookArea #mapBookArea06, .middleArea .map .mapBookArea #mapBookArea07 {
+    height: 224px;
+    width: 730px;
+}
+.middleArea .infographic {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #e4e4e4 #e4e4e4 #e4e4e4 currentcolor;
+    border-image: none;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px medium;
+    display: inline-block;
+    float: right;
+    height: 368px;
+    width: 272px;
+}
+.middleArea .infographic #infoSlide {
+    height: 309px;
+    position: relative;
+    top: 39px;
+    width: 216px;
+}
+.middleArea .infographic #infoSlide li img {
+    width: 100%;
+}
+.middleArea .infographic .anythingSlider-default .arrow {
+    right: 0;
+}
+.middleArea .infographic .anythingSlider-default .back {
+    top: 174px;
+}
+@media �screen {
+.middleArea .infographic .anythingSlider-default .back {
+    top: 174px;
+}
+}
+.middleArea .infographic .anythingSlider-default .forward {
+    top: 126px;
+}
+.proMov {
+    margin: 0 auto 50px;
+    width: 1064px;
+}
+.proMov .newListArea li .likeArea {
+    left: inherit;
+    right: 20px;
+}
+.proMov .movBox {
+    margin: 28px 0 0;
+}
+.proMov .movBox::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.proMov .movBox .movFrame {
+    border: 1px solid #e5e5e5;
+    display: inline-block;
+    float: left;
+    height: 376px;
+    position: relative;
+    width: 516px;
+}
+.proMov .movBox .movFrame:first-child {
+    margin-right: 28px;
+}
+.proMov .movBox .movFrame iframe {
+    height: 292px;
+    margin: 0;
+    padding: 0;
+    width: 516px;
+}
+.proMov .movBox .movFrame .title {
+    color: #444;
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 30px;
+    margin: 15px 18px 0;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.proMov .movBox .movFrame .likeArea {
+    margin: 6px 0 0 18px;
+}
+.audioArea {
+    margin: 0 auto 50px;
+    width: 1064px;
+}
+.middleGreyArea {
+    background: #f7f7f9 none repeat scroll 0 0;
+    margin: 0 0 50px;
+    padding: 100px 0 50px;
+}
+.middleGreyArea .in {
+    margin: 0 auto;
+    width: 1064px;
+}
+.middleGreyArea .in::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.middleGreyArea .newTit {
+    margin: -50px 0 20px;
+}
+.middleGreyArea .rankingArea, .middleGreyArea .recommend {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e4e4e4;
+    display: inline-block;
+}
+.middleGreyArea .recommend {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #e4e4e4 #e4e4e4 #e4e4e4 currentcolor;
+    border-image: none;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px medium;
+    float: right;
+    height: 356px;
+    width: 272px;
+}
+.middleGreyArea .recommend .desc {
+    color: #444;
+    font-size: 18px;
+    padding: 18px 0 23px;
+    text-align: center;
+}
+.middleGreyArea .recommend .recoSlide {
+    width: 100%;
+}
+.middleGreyArea .recommend #recoSlide {
+    height: 213px;
+    width: 100%;
+}
+.middleGreyArea .recommend #recoSlide li {
+    overflow: hidden;
+    width: 100%;
+}
+.middleGreyArea .recommend #recoSlide li img {
+    margin-left: 18px;
+}
+.middleGreyArea .recommend .new .anythingSlider-default .anythingControls {
+    margin-top: 44px;
+}
+.middleGreyArea .recommend .new .anythingSlider-default .arrow {
+    right: 0;
+}
+.middleGreyArea .recommend .new .anythingSlider-default .back {
+    top: 119px;
+}
+.middleGreyArea .recommend .new .anythingSlider-default .forward {
+    top: 71px;
+}
+.middleGreyArea .rankingArea {
+    float: left;
+    height: 356px;
+    width: 789px;
+}
+.middleGreyArea .rankingArea .ranking {
+    margin-left: 30px;
+}
+.middleGreyArea .rankingArea .ranking ul {
+    display: block;
+}
+.middleGreyArea .rankingArea .ranking ul::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.middleGreyArea .rankingArea .ranking ul li {
+    display: inline-block;
+    float: left;
+    margin-left: 29px;
+    width: 160px;
+}
+.middleGreyArea .rankingArea .ranking ul li:first-child {
+    margin: 0;
+}
+.middleGreyArea .rankingArea .rankingList {
+    height: 257px;
+    overflow: hidden;
+    position: relative;
+    width: 160px;
+}
+.middleGreyArea .rankingArea .rankingList .mark {
+    color: #fff;
+    display: block;
+    font-family: Gotham;
+    height: 40px;
+    left: 0;
+    line-height: 40px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 40px;
+    z-index: 2;
+}
+.middleGreyArea .rankingArea .rankingList .mark::before {
+    background: #f54c91 none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.middleGreyArea .rankingArea .rankingList .mark i {
+    font-size: 18px;
+    font-style: normal;
+    position: relative;
+    z-index: 2;
+}
+.middleGreyArea .rankingArea .rankingList .thumb {
+    height: 180px;
+    position: relative;
+    width: 160px;
+    z-index: 1;
+}
+.middleGreyArea .rankingArea .rankingList .thumb img {
+    height: 100%;
+    width: 100%;
+}
+.middleGreyArea .rankingArea .rankingList .info {
+    bottom: 0;
+    height: 77px;
+    left: 0;
+    padding: 0 6px;
+    position: absolute;
+    width: 150px;
+}
+.middleGreyArea .rankingArea .rankingList .info::before {
+    background: #fff none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.middleGreyArea .rankingArea .rankingList .info a, .middleGreyArea .rankingArea .rankingList .info .title, .middleGreyArea .rankingArea .rankingList .info .desc {
+    display: block;
+    max-height: 57px;
+    position: relative;
+    z-index: 2;
+}
+.middleGreyArea .rankingArea .rankingList .info a {
+    background: #e85581 none repeat scroll 0 0;
+    color: #fff;
+    display: block;
+    font-size: 13px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+}
+.middleGreyArea .rankingArea .rankingList .info .title {
+    color: #444;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: -0.031em;
+    line-height: 19px;
+    overflow: hidden;
+    padding: 15px 0;
+}
+.middleGreyArea .rankingArea .rankingList .info .desc {
+    color: #666;
+    font-size: 12px;
+    letter-spacing: -0.038em;
+    line-height: 16px;
+    margin: 0 0 17px;
+    overflow: hidden;
+    padding: 10px 0 0;
+}
+.middleGreyArea .rankingArea .rankingList.on .info a, .middleGreyArea .rankingArea .rankingList.on .info .desc {
+    display: block;
+}
+.middleGreyArea .rankingArea .rankingList.on .info .desc {
+    margin-top: -15px;
+}
+.mobileApp {
+    margin: 0 auto 30px;
+    width: 1064px;
+}
+.mainBotBanner {
+    margin: 0 auto 30px;
+}
+.mobileApp {
+    border: 1px solid #e4e4e4;
+    margin: 100px auto 30px;
+    position: relative;
+    width: 1064px;
+}
+.mobileApp .newTit {
+    margin-top: -50px;
+}
+.mobileApp .listArea li {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #eee;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+    height: 348px;
+    margin: 0;
+    text-align: center;
+    width: 265px;
+}
+.mobileApp .listArea strong {
+    color: #444;
+    display: block;
+    font: bold 20px/20px "Nanum Gothic";
+    letter-spacing: -0.025em;
+    margin: 0 auto;
+    padding: 0 0 10px;
+    width: 100%;
+}
+.mobileApp .listArea .icoApp {
+    background: rgba(0, 0, 0, 0) url("/img/main/spr_mobileApp_v4.gif") no-repeat scroll 0 0;
+    display: block;
+    height: 121px;
+    margin: 31px auto 21px;
+    width: 121px;
+}
+.mobileApp .listArea .hanatour, .mobileApp .listArea .hanaFreeAccomm {
+    border-left: medium none;
+}
+.mobileApp .listArea .hanaFreeAccomm, .mobileApp .listArea .hanaFree, .mobileApp .listArea .hanaFreeTicket, .mobileApp .listArea .getAbout {
+    border-bottom: medium none;
+}
+.mobileApp .listArea .getAbout, .mobileApp .listArea .hanaFreeHotel {
+    border-right: medium none;
+}
+.mobileApp .listArea .hanatour .icoApp {
+    background-position: 0 0;
+}
+.mobileApp .listArea .hanatourPack .icoApp {
+    background-position: -121px 0;
+}
+.mobileApp .listArea .hanaFreeAirtel .icoApp {
+    background-position: -241px 0;
+}
+.mobileApp .listArea .hanaFreeAirtel strong {
+    font-size: 15px;
+    letter-spacing: -1px;
+    width: 170px;
+}
+.mobileApp .listArea .hanaFreeAir .icoApp {
+    background-position: -362px 0;
+}
+.mobileApp .listArea .hanaFreeHotel .icoApp {
+    background-position: -483px 0;
+}
+.mobileApp .listArea .hanaFreeAccomm .icoApp {
+    background-position: 0 -121px;
+}
+.mobileApp .listArea .hanaFree .icoApp {
+    background-position: -121px -121px;
+}
+.mobileApp .listArea .hanaFreeTicket .icoApp {
+    background-position: -242px -121px;
+}
+.mobileApp .listArea .hanaTourEbook .icoApp {
+    background-position: -363px -121px;
+}
+.mobileApp .listArea .getAbout .icoApp {
+    background: rgba(0, 0, 0, 0) url("/img/main/ico_mobileApp_tourtips.jpg") no-repeat scroll 0 0;
+}
+.mobileApp .listArea .btns {
+    background: #fff none repeat scroll 0 0;
+    bottom: 30px;
+    display: block;
+    height: 44px;
+    left: 0;
+    position: absolute;
+    vertical-align: top;
+    width: 100%;
+}
+.mobileApp .listArea .btns a {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #c7c7c7;
+    color: #444;
+    display: inline-block;
+    font: bold 16px/42px "Nanum Gothic";
+    height: 42px;
+    vertical-align: top;
+    width: 203px;
+}
+.mobileApp .listArea .desc {
+    color: #666;
+    font-size: 18px;
+    letter-spacing: -0.028em;
+    line-height: 28px;
+    padding-bottom: 20px;
+}
+.mobileApp .btnDown {
+    margin: 24px 0 0;
+}
+.tabBox.typeB {
+    overflow: inherit;
+    width: 789px;
+}
+.tabBox.typeB .tab {
+    height: 55px;
+    margin: 0 0 30px;
+}
+.tabBox.typeB .tab::after {
+    background: #e4e4e4 none repeat scroll 0 0;
+    height: 1px;
+}
+.tabBox.typeB .tab ul {
+    display: block;
+    position: relative;
+}
+.tabBox.typeB .tab li {
+    color: #444;
+    display: inline-block;
+    float: left;
+    font-size: 18px;
+    font-weight: normal;
+    height: 55px;
+    letter-spacing: -0.028em;
+    line-height: 55px;
+    padding: 0 15px;
+    width: auto;
+}
+.tabBox.typeB .tab li::after {
+    display: none;
+}
+.tabBox.typeB .tab li:last-child {
+    width: auto;
+}
+.tabBox.typeB .tab li.on {
+    background: #e85581 none repeat scroll 0 0;
+    height: 56px;
+    left: -1px;
+    position: relative;
+    top: -1px;
+    z-index: 2;
+}
+.tabBox.typeB .tabConts .tabCont {
+    text-align: left;
+}
+.tabBox.typeB .tabConts .tabCont .slideIn {
+    text-align: left;
+}
+.tabBox.typeB .tabConts .tabCont .slideIn a {
+    display: inline-block;
+    float: left;
+    margin-left: 30px;
+}
+.tabBox.typeB .tabConts .tabCont .slideIn a:first-child {
+    margin: 0;
+}
+.tabBox.typeB .tabConts .tabCont #mapBookArea {
+    height: 224px;
+    width: 730px;
+}
+.tabBox.typeB .anythingSlider-default .arrow {
+    right: -30px;
+    z-index: 10;
+}
+.tabBox.typeB .anythingSlider-default .back {
+    top: 90px;
+}
+.tabBox.typeB .anythingSlider-default .forward {
+    top: 42px;
+}
+@media �screen {
+.tabBox.typeB .anythingSlider-default .back {
+    top: 90px;
+}
+}
+.audioList #audioList li .thumb img {
+    height: 100%;
+    width: auto;
+}

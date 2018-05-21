@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	$(function() {
+		$('.curCityInfo').hide();
+	});
+</script>
+</head>
+<body>
+	<!--header-->
+	<div id="header"></div>
+	<!-- <div class="banner banner5"></div> -->
+	<!--inner-page-about-->
+	<div class="image">
+		<img src="images/blog.jpg" width="100%" />
+		<div class="text">
+			<h3>날씨 / 환율</h3>
+		</div>
+	</div>
+
+<div class="abouts">
+	<div id="visualArea" style="background-image:url(/img/world.jgp)">
+		<div id="subWrap">
+			<h3>도시 찾기</h3>
+			
+			<div class="searchBar">
+				<input type="text" name="cityName" id="cityName" data-placeholder="도시명을 입력하세요."/>
+				<button type="button" title="도시검색" class="btnCitySearch"><span>검색</span></button>
+			</div>
+			
+		</div>
+		<div class="weatherWrap">
+			
+			<div class="theWorld">
+			<div class="weatherBox">
+
+				<div class="curCityInfo" data-code="LON">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">런던</strong><br>
+							<span class="date dateformat" data-timestamp="1494905111" data-format="m.d H:i">05.16 03:25</span>
+							<span class="summerTime">- 서머타임</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/110_B.png" alt="흐림"></span>
+							<span class="degree">18 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-8시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>11 : 50</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1GBP</i> = <i>1,443.59</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000173736">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="PAR">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">파리</strong><br>
+							<span class="date dateformat" data-timestamp="1494908711" data-format="m.d H:i">05.16 04:25</span>
+							<span class="summerTime">- 서머타임</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/100_B.png" alt="맑음"></span>
+							<span class="degree">20 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-7시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>12 : 10</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1EUR</i> = <i>1,229.50</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000125242">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="ROM">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">로마</strong><br>
+							<span class="date dateformat" data-timestamp="1494908711" data-format="m.d H:i">05.16 04:25</span>
+							<span class="summerTime">- 서머타임</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/110_B.png" alt="흐림"></span>
+							<span class="degree">22 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-7시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>12 : 25</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1EUR</i> = <i>1,229.50</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000146971">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="CAI">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">카이로</strong><br>
+							<span class="date dateformat" data-timestamp="1494908711" data-format="m.d H:i">05.16 04:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/100_B.png" alt="맑음"></span>
+							<span class="degree">26 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-7시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>13 : 55</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1EGP</i> = <i>61.74</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000116721">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="NBO">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">나이로비</strong><br>
+							<span class="date dateformat" data-timestamp="1494912311" data-format="m.d H:i">05.16 05:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/103_B.png" alt="소나기"></span>
+							<span class="degree">20 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-6시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>14 : 45</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1KES</i> = <i>11.41</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000150318">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="JNB">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">요하네스버그</strong><br>
+							<span class="date dateformat" data-timestamp="1494908711" data-format="m.d H:i">05.16 04:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/100_B.png" alt="맑음"></span>
+							<span class="degree">15 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-7시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>17 : 20</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1ZAR</i> = <i>85.00</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000162380">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="IST">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">이스탄불</strong><br>
+							<span class="date dateformat" data-timestamp="1494908711" data-format="m.d H:i">05.16 04:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/201_B.png" alt="흐림"></span>
+							<span class="degree">19 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-7시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>11 : 55</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1TRY</i> = <i>315.23</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000169891">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="KWI">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">쿠웨이트</strong><br>
+							<span class="date dateformat" data-timestamp="1494912311" data-format="m.d H:i">05.16 05:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/100_B.png" alt="맑음"></span>
+							<span class="degree">37 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-6시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>11 : 35</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1KWD</i> = <i>3,670.22</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000150671">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="DEL">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">델리</strong><br>
+							<span class="date dateformat" data-timestamp="1494921311" data-format="m.d H:i">05.16 07:55</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/208_B.png" alt="뇌우"></span>
+							<span class="degree">36 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-3시간 30분</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>09 : 40</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1INR</i> = <i>17.46</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000140776">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="BER">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">베를린</strong><br>
+							<span class="date dateformat" data-timestamp="1494905111" data-format="m.d H:i">05.16 03:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/110_B.png" alt="흐림"></span>
+							<span class="degree">15 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-8시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>11 : 30</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1EUR</i> = <i>1,229.50</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000130645">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="MOW">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">모스크바</strong><br>
+							<span class="date dateformat" data-timestamp="1494912311" data-format="m.d H:i">05.16 05:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/300_B.png" alt="비"></span>
+							<span class="degree">10 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-6시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>09 : 15</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1RUB</i> = <i>19.84</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000160731">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="BJS">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">베이징</strong><br>
+							<span class="date dateformat" data-timestamp="1494930311" data-format="m.d H:i">05.16 10:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/110_B.png" alt="흐림"></span>
+							<span class="degree">24 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-1시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>02 : 15</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1CNY</i> = <i>162.46</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000111905">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="HKG">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">홍콩</strong><br>
+							<span class="date dateformat" data-timestamp="1494930311" data-format="m.d H:i">05.16 10:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/103_B.png" alt="소나기"></span>
+							<span class="degree">26 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-1시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>03 : 55</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1HKD</i> = <i>143.68</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000139797">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="BCN">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">바르셀로나</strong><br>
+							<span class="date dateformat" data-timestamp="1494905111" data-format="m.d H:i">05.16 03:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/100_B.png" alt="맑음"></span>
+							<span class="degree">22 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-8시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>14 : 15</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1EUR</i> = <i>1,229.50</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000163225">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="BKK">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">방콕</strong><br>
+							<span class="date dateformat" data-timestamp="1494926711" data-format="m.d H:i">05.16 09:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/208_B.png" alt="뇌우"></span>
+							<span class="degree">31 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-2시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>05 : 55</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1THB</i> = <i>32.42</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000169256">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="TYO">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">도쿄</strong><br>
+							<span class="date dateformat" data-timestamp="1494933911" data-format="m.d H:i">05.16 11:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/110_B.png" alt="흐림"></span>
+							<span class="degree">20 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>0시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>02 : 20</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>100JPY</i> = <i>985.16</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000149960">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="VVO">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">블라디보스톡</strong><br>
+							<span class="date dateformat" data-timestamp="1494937511" data-format="m.d H:i">05.16 12:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/300_B.png" alt="비"></span>
+							<span class="degree">11 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>1시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>02 : 40</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1RUB</i> = <i>19.84</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000161052">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="SIN">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">싱가포르</strong><br>
+							<span class="date dateformat" data-timestamp="1494930311" data-format="m.d H:i">05.16 10:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/208_B.png" alt="뇌우"></span>
+							<span class="degree">29 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-1시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>06 : 45</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1SGD</i> = <i>800.24</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000161474">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="SYD">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">시드니</strong><br>
+							<span class="date dateformat" data-timestamp="1494937511" data-format="m.d H:i">05.16 12:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/100_B.png" alt="맑음"></span>
+							<span class="degree">16 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>1시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>10 : 10</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1AUD</i> = <i>830.58</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000102431">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="AKL">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">오클랜드</strong><br>
+							<span class="date dateformat" data-timestamp="1494944711" data-format="m.d H:i">05.16 14:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/300_B.png" alt="비"></span>
+							<span class="degree">14 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>3시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>11 : 10</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1NZD</i> = <i>771.88</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000154575">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="ANC">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">앵커리지</strong><br>
+							<span class="date dateformat" data-timestamp="1494869111" data-format="m.d H:i">05.15 17:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/100_B.png" alt="맑음"></span>
+							<span class="degree">12 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-18시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>13 : 16</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1USD</i> = <i>1,181.00</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000176501">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="SEA">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">시애틀</strong><br>
+							<span class="date dateformat" data-timestamp="1494872711" data-format="m.d H:i">05.15 18:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/103_B.png" alt="소나기"></span>
+							<span class="degree">11 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-17시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>09 : 40</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1USD</i> = <i>1,181.00</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000190786">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="CHI">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">시카고</strong><br>
+							<span class="date dateformat" data-timestamp="1494879911" data-format="m.d H:i">05.15 20:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/100_B.png" alt="맑음"></span>
+							<span class="degree">24 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-15시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>09 : 40</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1USD</i> = <i>1,181.00</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000179110">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="YTO">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">토론토</strong><br>
+							<span class="date dateformat" data-timestamp="1494883511" data-format="m.d H:i">05.15 21:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/103_B.png" alt="소나기"></span>
+							<span class="degree">18 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-14시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>13 : 20</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1CAD</i> = <i>820.98</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000109976">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="NYC">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">뉴욕</strong><br>
+							<span class="date dateformat" data-timestamp="1494883511" data-format="m.d H:i">05.15 21:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/100_B.png" alt="맑음"></span>
+							<span class="degree">19 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-14시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>14 : 00</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1USD</i> = <i>1,181.00</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000187551">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="LAX">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">로스 엔젤레스</strong><br>
+							<span class="date dateformat" data-timestamp="1494872711" data-format="m.d H:i">05.15 18:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/101_B.png" alt="구름조금"></span>
+							<span class="degree">17 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-17시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>10 : 40</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1USD</i> = <i>1,181.00</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000185554">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="HNL">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">호놀룰루</strong><br>
+							<span class="date dateformat" data-timestamp="1494865511" data-format="m.d H:i">05.15 16:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/103_B.png" alt="소나기"></span>
+							<span class="degree">26 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-19시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>08 : 15</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1USD</i> = <i>1,181.00</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000183669">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="WT3">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">워싱턴</strong><br>
+							<span class="date dateformat" data-timestamp="1494883511" data-format="m.d H:i">05.15 21:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/100_B.png" alt="맑음"></span>
+							<span class="degree">20 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-14시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>13 : 35</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1USD</i> = <i>1,181.00</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000193040">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="MEX">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">멕시코 시티</strong><br>
+							<span class="date dateformat" data-timestamp="1494879911" data-format="m.d H:i">05.15 20:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/300_B.png" alt="흐려져 비"></span>
+							<span class="degree">17 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-15시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>14 : 41</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1MXN</i> = <i>60.01</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000151982">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="RIO">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">리우 데 자네이루</strong><br>
+							<span class="date dateformat" data-timestamp="1494890711" data-format="m.d H:i">05.15 23:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/300_B.png" alt="비"></span>
+							<span class="degree">22 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-12시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>24 : 04</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1BRL</i> = <i>359.68</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000107709">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="ZAG">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">자그레브</strong><br>
+							<span class="date dateformat" data-timestamp="1494905111" data-format="m.d H:i">05.16 03:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/103_B.png" alt="소나기"></span>
+							<span class="degree">19 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-8시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>14 : 35</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1HRK</i> = <i>175.94</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000114428">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="BKI">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">코타키나발루</strong><br>
+							<span class="date dateformat" data-timestamp="1494930311" data-format="m.d H:i">05.16 10:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/201_B.png" alt="흐림"></span>
+							<span class="degree">29 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-1시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>05 : 30</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1MYR</i> = <i>259.06</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000151424">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="TPE">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">타이베이</strong><br>
+							<span class="date dateformat" data-timestamp="1494930311" data-format="m.d H:i">05.16 10:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/300_B.png" alt="비"></span>
+							<span class="degree">24 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-1시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>02 : 30</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1TWD</i> = <i>37.19</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000169154">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<div class="curCityInfo" data-code="CEB">
+					<ul>
+						<li class="column1">
+							<strong class="cityName">세부</strong><br>
+							<span class="date dateformat" data-timestamp="1494930311" data-format="m.d H:i">05.16 10:25</span>
+						</li>
+						<li class="column2">
+							<strong>오늘 날씨</strong><br>
+							<span><img src="/images/300_B.png" alt="비"></span>
+							<span class="degree">27 ˚C</span>
+						</li>
+						<li class="column3">
+							<strong>시차</strong><br>
+							<span>-1시간</span>
+						</li>
+						<li class="column4">
+							<strong>비행시간</strong><br>
+							<span>04 : 35</span>
+						</li>
+						<li class="column5">
+							<strong>환율</strong><br>
+							<i>1PHP</i> = <i>22.53</i>원
+						</li>
+						<li class="column6"><a href="/weather/city/1000157166">자세히 보기</a></li>
+					</ul>
+					<span class="bg"></span>
+				</div>
+				<!-- //curCityInfo -->
+				
+				<ul class="cityGroup">
+					<li class="LON" data-code="LON"><a href="single.html">런던</a></li>
+					<li class="PAR" data-code="PAR"><a href="single.html">파리</a></li>
+					<li class="ROM" data-code="ROM"><a href="single.html">로마</a></li>
+					<li class="CAI" data-code="CAI"><a href="single.html">카이로</a></li>
+					<li class="NBO" data-code="NBO"><a href="single.html">나이로비</a></li>
+					<li class="JNB" data-code="JNB"><a href="single.html">요하네스버그</a></li>
+					<li class="IST" data-code="IST"><a href="single.html">이스탄불</a></li>
+					<li class="KWI" data-code="KWI"><a href="single.html">쿠웨이트</a></li>
+					<li class="DEL" data-code="DEL"><a href="single.html">델리</a></li>
+					<li class="BER" data-code="BER"><a href="single.html">베를린</a></li>
+					<li class="MOW" data-code="MOW"><a href="single.html">모스크바</a></li>
+					<li class="BJS" data-code="BJS"><a href="single.html">베이징</a></li>
+					<li class="HKG" data-code="HKG"><a href="single.html7">홍콩</a></li>
+					<li class="BCN" data-code="BCN"><a href="single.html">바르셀로나</a></li>
+					<li class="BKK" data-code="BKK"><a href="single.html">방콕</a></li>
+					<li class="TYO" data-code="TYO"><a href="single.html">도쿄</a></li>
+					<li class="VVO" data-code="VVO"><a href="single.html">블라디보스톡</a></li>
+					<li class="SIN" data-code="SIN"><a href="single.html">싱가포르</a></li>
+					<li class="SYD" data-code="SYD"><a href="single.html">시드니</a></li>
+					<li class="AKL" data-code="AKL"><a href="single.html">오클랜드</a></li>
+					<li class="ANC" data-code="ANC"><a href="single.html">앵커리지</a></li>
+					<li class="SEA" data-code="SEA"><a href="single.html">시애틀</a></li>
+					<li class="CHI" data-code="CHI"><a href="single.html">시카고</a></li>
+					<li class="YTO" data-code="YTO"><a href="single.html">토론토</a></li>
+					<li class="NYC" data-code="NYC"><a href="single.html">뉴욕</a></li>
+					<li class="LAX" data-code="LAX"><a href="single.html">로스 엔젤레스</a></li>
+					<li class="HNL" data-code="HNL"><a href="single.html">호놀룰루</a></li>
+					<li class="WT3" data-code="WT3"><a href="single.html">워싱턴</a></li>
+					<li class="MEX" data-code="MEX"><a href="single.html">멕시코 시티</a></li>
+					<li class="RIO" data-code="RIO"><a href="single.html">리우 데 자네이루</a></li>
+					<li class="ZAG" data-code="ZAG"><a href="single.html">자그레브</a></li>
+					<li class="BKI" data-code="BKI"><a href="single.html">코타키나발루</a></li>
+					<li class="TPE" data-code="TPE"><a href="single.html">타이베이</a></li>
+					<li class="CEB" data-code="CEB"><a href="single.html">세부</a></li>
+					<!-- <li class="GUM" data-code="GUM"><a href="single.html">괌</a></li> -->
+				</ul>
+			</div>
+			</div>
+		</div>
+	
+	</div>
+
+</div>
+
+<script type="text/javascript">
+	//지도 마우스 오버 시
+	$(".cityGroup li").mouseenter(function() {
+		$(".cityGroup li").removeClass("cur");
+		$(this).addClass("cur");
+
+		$('.curCityInfo').hide();
+		$('.curCityInfo').filter('[data-code='+$(this).data('code')+']').show();
+	});
+
+	$(window).click(function(e) {
+		if($(e.target).parents('.searchBar').length < 1) {
+			$(".selectArea").removeClass("cur");
+		}
+	});
+
+	$("#cityName").on({
+		focus : function() {
+			$('.searchCity').addClass('cur');
+		},
+		blur : function() {
+			if($("#cityName").val().length < 1) {
+				$(".searchCity").removeClass("cur");
+			}
+		}
+	});
+
+	$('.selectArea .title').click(function() {
+		$(this).parent().toggleClass('cur');
+	});
+
+	$(function() {
+		new searchLocation($('#cityName'));
+
+		new listLocation($('.selectArea .title'));
+	});
+
+
+	function commify(n) {
+		//var reg = /(^[+-]?\d+)(\d{3})/, n = n+'';	// 숫자를 문자열로 변환
+		var reg = /(^[+-]?\d+)(?=(\d\d\d)+(?!\d))/g, n = n+'';	// 숫자를 문자열로 변환
+		while (reg.test(n)) {
+			n = n.replace(reg, '$1,');
+		}
+		return n;
+	}
+
+	$('#cal1').each(function() {
+		$(this).keyup(function(e) {
+			var key = e.charCode || e.keyCode || 0;
+			if(key == 8 ||key == 9 ||key == 46 ||(key >= 37 && key <= 40) ||(key >= 48 && key <= 57) ||(key >= 96 && key <= 105)) {
+				var mark = $('#cal0').attr('mark'), rate = $('#cal0').attr('rate'), cal0 = $('#cal0').attr('data'), cal1_val =  $(this).val(), cal2_val =  $('#cal2').val();
+				if(cal1_val == ''){
+					cal1_val = '1';
+				}
+
+				if(!isNaN(cal1_val)){
+					cal2_val = (cal0 * cal1_val) / rate;
+					cal2_val = cal2_val.toFixed(2);
+					cal2_val = commify(cal2_val);
+
+					cal1_val = commify(cal1_val);
+				} else {
+					cal2_val = '0';
+					cal1_val = '0';
+				}
+
+				$('#cal2').val(cal2_val);
+				$('#cal2_kor').html(cal2_val+' 원');
+				$('#cal1_kor').html(cal1_val+' '+mark);
+			} else {
+				return false;
+			}
+		});
+		$(this).focusout(function() { $(this).val($(this).val().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")); });
+		$(this).focusin(function() { $(this).val($(this).val().replace(/\,/g, '')); });
+	});
+
+	$('#cal2').each(function() {
+		$(this).keyup(function(e) {
+			var key = e.charCode || e.keyCode || 0;
+			if(key == 8 ||key == 9 ||key == 46 ||(key >= 37 && key <= 40) ||(key >= 48 && key <= 57) ||(key >= 96 && key <= 105)) {
+				var mark = $('#cal0').attr('mark'), rate = $('#cal0').attr('rate'), cal0 = $('#cal0').attr('data'), cal2_val = $(this).val(), cal1_val =  $('#cal1').val();
+				if(cal2_val == ''){
+					cal2_val = '1';
+				}
+
+				if(!isNaN(cal2_val)){
+					cal1_val = (cal2_val / cal0) * rate;
+					cal1_val = cal1_val.toFixed(2);
+					cal2_val = commify(cal2_val);
+				} else {
+					cal2_val = '0';
+					cal1_val = '0';
+				}
+
+				$('#cal1').val(cal1_val);
+				$('#cal1_kor').html(cal1_val+' '+mark);
+				$('#cal2_kor').html(cal2_val+' 원');
+			} else {
+				return false;
+			}
+		});
+		$(this).focusout(function() { $(this).val($(this).val().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")); });
+		$(this).focusin(function() { $(this).val($(this).val().replace(/\,/g, '')); });
+	});
+
+	(function () {
+		var mark = $('#cal0').attr('mark'), rate = $('#cal0').attr('rate'), cal0 = $('#cal0').attr('data'), cal1_val =  $('#cal1').val(), cal2_val =  $('#cal2').val();
+		if(cal1_val == ''){
+			cal1_val = '1';
+		}
+
+		if(!isNaN(cal1_val)){
+			cal2_val = (cal0 * cal1_val) / rate;
+			cal2_val = cal2_val.toFixed(2);
+			cal2_val = commify(cal2_val);
+
+			cal1_val = commify(cal1_val);
+		} else {
+			cal2_val = '0';
+			cal1_val = '0';
+		}
+
+		$('#cal2').val(cal2_val);
+		$('#cal2_kor').html(cal2_val+' 원');
+		$('#cal1_kor').html(cal1_val+' '+mark);
+	})();
+
+	$('.des_cal_rate input[type="text"]').each(function(i){
+		$(this).focusin(function(){
+			$('#'+$(this).attr('id')+'_kor').css('color', '#ff7510');
+		});
+
+		$(this).focusout(function(){
+			$('#'+$(this).attr('id')+'_kor').css('color', '#666');
+		});
+	});
+</script>
+</body>
+</html>
